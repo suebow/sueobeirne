@@ -1,82 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susan O'Beirne - CV</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Susan O'Beirne CV</title>
 </head>
-
 <body>
-    <div class="container my-5 animate__animated animate__fadeIn animate__delay-1s">
-        <header class="text-center mb-5" data-aos="fade-down" data-aos-delay="100">
-            <h1 class="display-3 metallic-text">Susan O'Beirne</h1>
-            <p class="lead text-muted">Senior Software Engineer | Former Music Educator</p>
-        </header>
-        <main>
-            <article>
-                <section class="contact-details mb-5 p-4 rounded" data-aos="fade-up" data-aos-delay="200">
-                    <h2 class="section-title">Contact</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                📍 <a href="https://maps.app.goo.gl/ccY8JELPkoufxEz86">Unit 26, 37 O'Donnell Street, North Bondi, NSW, 2026</a><br />
-                                ✉ <a href="mailto:susandenise.obeirne@gmail.com">susandenise.obeirne@gmail.com</a><br />
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>
-                                ☎ <a href="#">+61 423-068-854</a><br />
-                                💻 <a href="https://www.linkedin.com/in/sue-o-beirne-b49b5993/">LinkedIn Profile</a><br />
-                            </p>
-                        </div>
-                    </div>
-                </section>
+    <header class="hero-section text-center">
+        <div class="photo-container">
+            <img src="sue.jpg" alt="Susan O'Beirne" class="profile-photo">
+        </div>
+        <h1 class="display-4 metallic-text">Susan O'Beirne</h1>
+        <hr class="my-4">
+        <p class="lead">Senior Software Engineer, Former Music Educator</p>
+        <hr>
+    </header>
 
-                <section class="mb-5 p-4 rounded" data-aos="fade-up" data-aos-delay="300">
-                    <h2 class="section-title">Skills</h2>
-                    <p>C#, .NET Core, .NET Framework, React.js, Redux, Typescript, Kotlin, Teamcity, GitHub Actions, VS Code, Visual Studio, K8s, Docker, AWS CLI, Step Functions, EC2 Management, ASGs, S3, SQL, Mixpanel, JIRA, Confluence, Sumo Logic, New Relic, JQuery, Angular.js, Razor Markup, CSS, Code-First EF, TFS</p>
-                </section>
 
-                <section class="mb-5 p-4 rounded" data-aos="fade-up" data-aos-delay="400">
-                    <h2 class="section-title">Education</h2>
-                    <p><strong>Higher Diploma in Software Development</strong> <br>Dublin Business School — 📍 Aungier Street, Dublin, Ireland (1.1 hons)</p>
-                    <p><strong>Masters in Musicology</strong> <br>Maynooth University — 📍 Maynooth, Co.Kildare, Ireland (2.1 hons)</p>
-                    <p><strong>Bachelor of Music</strong> <br>Maynooth University — 📍 Maynooth, Co.Kildare, Ireland (1.1 hons)</p>
-                </section>
+    <main class="container my-5">
+        <section id="contact" class="bg-light p-4 rounded shadow-sm mb-5">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><span class="icon">📍</span> <a href="https://maps.app.goo.gl/ccY8JELPkoufxEz86">Unit 26, 37 O'Donnell Street, North Bondi, NSW, 2026</a></p>
+                    <p><span class="icon">✉</span> <a href="mailto:susandenise.obeirne@gmail.com">susandenise.obeirne@gmail.com</a></p>
+                </div>
+                <div class="col-md-6">
+                    <p><span class="icon">☎</span> <a href="#">+61 423-068-854</a></p>
+                    <p><span class="icon">💻</span> <a href="https://www.linkedin.com/in/sue-o-beirne-b49b5993/">LinkedIn Profile</a></p>
+                </div>
+            </div>
+        </section>
 
-                <section class="mb-5 p-4 rounded" data-aos="fade-up" data-aos-delay="500">
-                    <h2 class="section-title">Work Experience</h2>
+        <section id="skills" class="bg-light p-4 rounded shadow-sm mb-5" data-aos="fade-up">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>C#, .NET Core, .NET Framework</li>
+                <li>React.js, Redux, Typescript</li>
+                <li>Kotlin, Teamcity, Github Actions</li>
+                <li>VS Code, Visual Studio, Docker, AWS CLI</li>
+                <li>SQL, JIRA, Confluence, Sumo Logic</li>
+                <li>JQuery, Angular.js, Razor Markup, CSS</li>
+            </ul>
+        </section>
+
+        <section id="education" class="bg-light p-4 rounded shadow-sm mb-5" data-aos="fade-up">
+            <h2 class="section-title">Education</h2>
+            <p><strong>Higher Diploma in Software Development</strong> <br>Dublin Business School, Dublin, Ireland (1.1 Hons)</p>
+            <p><strong>Masters in Musicology</strong> <br>Maynooth University, Maynooth, Co. Kildare, Ireland (2.1 Hons)</p>
+            <p><strong>Bachelor of Music</strong> <br>Maynooth University, Maynooth, Co. Kildare, Ireland (1.1 Hons)</p>
+        </section>
+
+        <section id="experience" class="bg-light p-4 rounded shadow-sm" data-aos="fade-up">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+               
+                <div class="experience-details">
                     <p><strong>Xero: Senior Software Engineer</strong> <br>October 2018-Present 📍 Auckland, New Zealand & Sydney, Australia</p>
-                    <h3 class="font-weight-bold">Projects</h3>
+                    <p><strong>Projects</strong></p>
                     <p>Access Management & Permissions</p>
                     <ul>
-                        <li>Developing solutions for user access management in accounting practice.</li>
-                        <li>Working with both legacy monolith and microservices architectures.</li>
+                        <li>Writing solutions to help users in accounting practice manage access and grant permissions.</li>
+                        <li>Working with code across multiple systems including legacy monolith and microservices.</li>
                     </ul>
                     <p>Timesheets</p>
                     <ul>
-                        <li>Creating solutions for employee timesheets and payroll management.</li>
-                        <li>Modernization project to comply with AU Fair Work legislation.</li>
-                        <li>Worked with legacy systems and modern .NET Core/React.js projects.</li>
-                        <li>Upgraded components from .NET Framework to .NET Core.</li>
-                        <li>Enhanced CI/CD pipelines using Kotlin and Teamcity.</li>
+                        <li>Writing solutions to help employees submit timesheets and Payroll admins pay employees correctly.</li>
+                        <li>Modernisation and compliance project to comply with AU Fair Working legislature.</li>
+                        <li>Worked with legacy monolith (MVC with .NET Framework) and multiple legacy front ends (Knockout, Durandal, Ext.js) as well as .NET Core/React.js project (with Redux).</li>
+                        <li>Uplifting components from .NET Framework to .NET Core.</li>
+                        <li>Uplifting legacy (ClickOps) pipelines to seamless CI/CD pipelines using Kotlin and Teamcity.</li>
                     </ul>
-                    <h3 class="font-weight-bold">Responsibilities</h3>
+                    <p><strong>Responsibilities</strong></p>
                     <ul>
-                        <li>End-to-end solution design, implementation, testing, and deployment.</li>
-                        <li>Participating in PR reviews and collaborating with stakeholders.</li>
-                        <li>Cross-functional collaboration with UX designers and product owners.</li>
-                        <li>On-call support and technical interviewing.</li>
-                        <li>Mentoring and onboarding new graduates.</li>
+                        <li>Designing, refining, implementing, testing, deploying, and monitoring end-to-end solutions.</li>
+                        <li>Participating in PR reviews.</li>
+                        <li>Working with stakeholders to align on deadlines for completion of work.</li>
+                        <li>Collaborating cross-functionally with UX designers, product owners, and engineers to improve customer experiences.</li>
+                        <li>On-call: responsible for running multiple services outside working hours and fixing issues as they arise.</li>
+                        <li>Technical interviewing panel: interviewing new candidates for Xero for both technical and team fit interviews.</li>
+                        <li>Grad buddy: onboarding, mentoring, and helping graduates with professional goals and development.</li>
                     </ul>
+                    </div>
+                    <div class="company-logo">
+                        <img src="xero-logo.jpg" alt="Xero Logo">
+                    </div>
+            </div>
+            <div class="experience-item">
+
+                    <div class="experience-details">
                     <p><strong>Version1: Software Developer</strong> <br>June 2016-September 2018 📍 Dublin, Ireland & Kent, England</p>
-                    <h3 class="font-weight-bold">Projects</h3>
+                    <p><strong>Projects</strong></p>
                     <p>Waste Data Capture</p>
                     <ul>
                         <li>Developed a system for tracking waste in a paper-making factory.</li>
@@ -88,29 +105,31 @@
                         <li>Migration from VB6 to ASP.NET MVC.</li>
                         <li>First exposure to concurrency issues.</li>
                     </ul>
-                    <h3 class="font-weight-bold">Responsibilities</h3>
+                    <
+                    <p><strong>Responsibilities</strong></p>
                     <ul>
                         <li>Implementing and testing solutions, collaborating with teams.</li>
                         <li>Involvement in Diversity and Women's reBOOT programs.</li>
                         <li>Onboarding and mentoring new graduates.</li>
                     </ul>
-                </section>
-            </article>
-        </main>
-    </div>
+                </div>
+                <div class="company-logo">
+                    <img src="v1.jpg" alt="Xero Logo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 Susan O'Beirne. All rights reserved.</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1200,
-            easing: 'ease-in-out',
-            once: true
-        });
+        AOS.init();
     </script>
 </body>
-
 </html>
