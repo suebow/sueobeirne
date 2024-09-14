@@ -9,20 +9,23 @@ body {
 
 /* Header */
 header.hero-section {
-    background: linear-gradient(135deg, #333, #666);
     color: #fff;
     padding: 100px 20px;
     text-align: center;
     position: relative;
+    background-image: url('code3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .photo-container {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
     overflow: hidden;
     border-radius: 50%;
     border: 5px solid #fff; /* Optional border */
@@ -37,11 +40,13 @@ header.hero-section {
 header.hero-section h1 {
     font-size: 3.5rem;
     font-weight: bold;
-    margin-top: 170px; /* Adjust to position the title below the photo */
+    margin-top: 200px; /* Adjust to position the title below the photo */
 }
 
 header.hero-section p.lead {
-    font-size: 1.5rem;
+    font-size: 2em;
+    position: relative;
+    color: white; /* Text color */
 }
 
 /* Work Experience */
@@ -85,12 +90,23 @@ header.hero-section p.lead {
     color: #666;
 }
 
+.section {
+    background-image: url('code4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    z-index: 0;
+}
+
 /* Footer */
 footer {
-    background: #333;
     color: #fff;
-    padding: 20px;
     text-align: center;
+    background-image: url('code3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Responsive Design */
