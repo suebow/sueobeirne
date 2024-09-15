@@ -11,7 +11,7 @@
 <body class="background">
     <header class="hero-section text-center">
         <div class="photo-container">
-            <img src="sue.jpg" alt="Susan O'Beirne" class="profile-photo">
+            <img src="images/sue.jpg" alt="Susan O'Beirne" class="profile-photo">
         </div>
         <h1 class="display-4 metallic-text">Susan O'Beirne</h1>
         <hr class="my-4">
@@ -19,105 +19,357 @@
         <hr>
     </header>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Removed the navbar-brand line -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
 <div class="sue">
     <main class="container my-5">
-        <section id="contact" class="bg-light p-4 rounded shadow-sm mb-5">
-            <h2 class="section-title">Contact Information</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p><span class="icon">📍</span> <a href="#"">Bondi, NSW, 2026</a></p>
-                    <p><span class="icon">✉</span> <a href="mailto:susandenise.obeirne@gmail.com">susandenise.obeirne@gmail.com</a></p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="icon">☎</span> <a href="#">+61 423-068-854</a></p>
-                    <p><span class="icon">💻</span> <a href="https://www.linkedin.com/in/sue-o-beirne-b49b5993/">LinkedIn Profile</a></p>
-                </div>
+
+        <section id="about-me" class="bg-light p-4 rounded shadow-sm mb-5" data-aos="fade-up">
+            <h2>About Me 🤓</h2>
+            <div class="about-me-content">
+                <p>Hello there! I’m Sue, an Irish software engineer currently living in Sydney, Australia. My journey into tech began in 2016 after making the difficult decision to leave my career as a piano tutor in the search of something that could challenge my problem solving skills.</p>
+                <p>As an engineer, I’m passionate about harnessing the power of psychological safety to create a safe environment where all team members feel valued and want to contribute to making beautiful software that genuinely benefits customers. I believe that a supportive and open environment is crucial for innovation and productivity and that psychological safety itself is the cornerstone of every high performing team. I am a dedicated team player who always follows through on my commitments and always supports other team members, ensuring that every project I undertake is completed with excellence and integrity.</p>
+                <p>When I’m not coding, you might find me exploring new places, playing the piano, or most likely in the gym! 😂 I'm always eager to learn and grow, both professionally and personally and always welcome constructive feedback.</p>
             </div>
         </section>
 
-        <section id="skills" class="bg-light p-4 rounded shadow-sm mb-5" data-aos="fade-up">
+        <section id="skills" class="bg-light p-4 rounded shadow-sm mb-5">
             <h2 class="section-title">Skills</h2>
-            <ul>
-                <li>C#, .NET Core, .NET Framework</li>
-                <li>React.js, Redux, Typescript</li>
-                <li>Kotlin, Teamcity, Github Actions</li>
-                <li>VS Code, Visual Studio, Docker, AWS CLI</li>
-                <li>SQL, JIRA, Confluence, Sumo Logic</li>
-                <li>JQuery, Angular.js, Razor Markup, CSS</li>
-            </ul>
-        </section>
+            <!-- Accordion container -->
+            <div class="accordion-container">
 
-        <section id="education" class="bg-light p-4 rounded shadow-sm mb-5" data-aos="fade-up">
-            <h2 class="section-title">Education</h2>
-            <p><strong>Higher Diploma in Software Development</strong> <br>Dublin Business School, Dublin, Ireland (1.1 Hons)</p>
-            <p><strong>Masters in Musicology</strong> <br>Maynooth University, Maynooth, Co. Kildare, Ireland (2.1 Hons)</p>
-            <p><strong>Bachelor of Music</strong> <br>Maynooth University, Maynooth, Co. Kildare, Ireland (1.1 Hons)</p>
+            <button class="accordion">Languages/Frameworks</button>
+            <div class="panel">
+                <div class="progress-item">
+                    <div class="skill-label">C#</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">.Net Core/.Net Framework</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">TypeScript</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">React/Redux</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">SQL</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Bash Scripting</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">CI/CD</button>
+            <div class="panel">
+                <div class="progress-item">
+                    <div class="skill-label">Kotlin</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Teamcity</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Github Actions</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">AWS CLI</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Development/Planning</button>
+            <div class="panel">
+                <div class="progress-item">
+                    <div class="skill-label">VS Code</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Visual Studio</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Github</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Docker</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Storybook</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Playwright</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Open Api</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Miro</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Jira</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">Confluence</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+                
+            <button class="accordion">Monitoring</button>
+            <div class="panel">
+                <div class="progress-item">
+                    <div class="skill-label">Sumologic</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="skill-label">New Relic</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="experience" class="bg-light p-4 rounded shadow-sm" data-aos="fade-up">
             <h2>Work Experience</h2>
-            <div class="experience-item">
-               
-                <div class="experience-details">
-                    <p><strong>Xero: Senior Software Engineer</strong> <br>October 2018-Present 📍 Auckland, New Zealand & Sydney, Australia</p>
-                    <p><strong>Projects</strong></p>
-                    <p>Access Management & Permissions</p>
-                    <ul>
-                        <li>Writing solutions to help users in accounting practice manage access and grant permissions.</li>
-                        <li>Working with code across multiple systems including legacy monolith and microservices.</li>
-                    </ul>
-                    <p>Timesheets</p>
-                    <ul>
-                        <li>Writing solutions to help employees submit timesheets and Payroll admins pay employees correctly.</li>
-                        <li>Modernisation and compliance project to comply with AU Fair Working legislature.</li>
-                        <li>Worked with legacy monolith (MVC with .NET Framework) and multiple legacy front ends (Knockout, Durandal, Ext.js) as well as .NET Core/React.js project (with Redux).</li>
-                        <li>Uplifting components from .NET Framework to .NET Core.</li>
-                        <li>Uplifting legacy (ClickOps) pipelines to seamless CI/CD pipelines using Kotlin and Teamcity.</li>
-                    </ul>
-                    <p><strong>Responsibilities</strong></p>
-                    <ul>
-                        <li>Designing, refining, implementing, testing, deploying, and monitoring end-to-end solutions.</li>
-                        <li>Participating in PR reviews.</li>
-                        <li>Working with stakeholders to align on deadlines for completion of work.</li>
-                        <li>Collaborating cross-functionally with UX designers, product owners, and engineers to improve customer experiences.</li>
-                        <li>On-call: responsible for running multiple services outside working hours and fixing issues as they arise.</li>
-                        <li>Technical interviewing panel: interviewing new candidates for Xero for both technical and team fit interviews.</li>
-                        <li>Grad buddy: onboarding, mentoring, and helping graduates with professional goals and development.</li>
-                    </ul>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2018-Present</div>
+                    <div class="timeline-content">
+                        <h3>Xero: Senior Software Engineer</h3>
+                        <p>📍 Auckland, New Zealand & Sydney, Australia</p>
+                        <p><strong>Projects</strong></p>
+                        <p><strong>Access Management & Permissions</strong></p>
+                        <ul>
+                            <li>Writing solutions to help users in accounting practice manage access and grant permissions.</li>
+                            <li>Working with code across multiple systems including legacy monolith and microservices.</li>
+                        </ul>
+                        <p><strong>Timesheets</strong></p>
+                        <ul>
+                            <li>Writing solutions to help employees submit timesheets and Payroll admins pay employees correctly.</li>
+                            <li>Modernisation and compliance project to comply with AU Fair Working legislature.</li>
+                            <li>Worked with legacy monolith (MVC with .NET Framework) and multiple legacy front ends (Knockout, Durandal, Ext.js) as well as .NET Core/React.js project (with Redux).</li>
+                            <li>Uplifting components from .NET Framework to .NET Core.</li>
+                            <li>Uplifting legacy (ClickOps) pipelines to seamless CI/CD pipelines using Kotlin and Teamcity.</li>
+                        </ul>
+                        <p><strong>Responsibilities</strong></p>
+                        <ul>
+                            <li>Designing, refining, implementing, testing, deploying, and monitoring end-to-end solutions.</li>
+                            <li>Participating in PR reviews.</li>
+                            <li>Working with stakeholders to align on deadlines for completion of work.</li>
+                            <li>Collaborating cross-functionally with UX designers, product owners, and engineers to improve customer experiences.</li>
+                            <li>On-call: responsible for running multiple services outside working hours and fixing issues as they arise.</li>
+                            <li>Technical interviewing panel: interviewing new candidates for Xero for both technical and team fit interviews.</li>
+                            <li>Grad buddy: onboarding, mentoring, and helping graduates with professional goals and development.</li>
+                        </ul>
                     </div>
                     <div class="company-logo">
-                        <img src="xero-logo.jpg" alt="Xero Logo">
+                        <a href="https://www.xero.com/au/"><img src="images/xero-logo.jpg" alt="Xero Logo"></a>
                     </div>
-            </div>
-            <div class="experience-item">
-
-                    <div class="experience-details">
-                    <p><strong>Version1: Software Developer</strong> <br>June 2016-September 2018 📍 Dublin, Ireland & Kent, England</p>
-                    <p><strong>Projects</strong></p>
-                    <p>Waste Data Capture</p>
-                    <ul>
-                        <li>Developed a system for tracking waste in a paper-making factory.</li>
-                        <li>Migration from VB6 to ASP.NET MVC.</li>
-                    </ul>
-                    <p>Paper Management System</p>
-                    <ul>
-                        <li>Inventory system for paper factory workers.</li>
-                        <li>Migration from VB6 to ASP.NET MVC.</li>
-                        <li>First exposure to concurrency issues.</li>
-                    </ul>
-                    <
-                    <p><strong>Responsibilities</strong></p>
-                    <ul>
-                        <li>Implementing and testing solutions, collaborating with teams.</li>
-                        <li>Involvement in Diversity and Women's reBOOT programs.</li>
-                        <li>Onboarding and mentoring new graduates.</li>
-                    </ul>
                 </div>
-                <div class="company-logo">
-                    <img src="v1.jpg" alt="Xero Logo">
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2016-September 2018</div>
+                    <div class="timeline-content">
+                        <h3>Version1: Software Developer</h3>
+                        <p>📍 Dublin, Ireland & Kent, England</p>
+                        <p><strong>Projects</strong></p>
+                        <p><strong>Waste Data Capture</strong></p>
+                        <ul>
+                            <li>Developed a system for tracking waste in a paper-making factory.</li>
+                            <li>Migration from VB6 to ASP.NET MVC.</li>
+                        </ul>
+                        <p><strong>Paper Management System</strong></p>
+                        <ul>
+                            <li>Inventory system for paper factory workers.</li>
+                            <li>Migration from VB6 to ASP.NET MVC.</li>
+                            <li>First exposure to concurrency issues.</li>
+                        </ul>
+                        <p><strong>Responsibilities</strong></p>
+                        <ul>
+                            <li>Implementing and testing solutions, collaborating with teams.</li>
+                            <li>Involvement in Diversity and Women's reBOOT programs.</li>
+                            <li>Onboarding and mentoring new graduates.</li>
+                        </ul>
+                    </div>
+                    <div class="company-logo">
+                        <a href="https://www.version1.com/"><img src="images/v1.jpg" alt="Version1 Logo"></a>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section id="education" class="bg-light p-4 rounded shadow-sm mb-5" data-aos="fade-up">
+            <h2 class="section-title">Education</h2>
+            <div class="roadmap">
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">🎓</div>
+                    <div class="roadmap-content">
+                        <h3>Higher Diploma in Software Development</h3>
+                        <p>Dublin Business School, Dublin, Ireland (1.1 Hons)</p>
+                        <span class="roadmap-date">2018 - 2019</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">🎓</div>
+                    <div class="roadmap-content">
+                        <h3>Masters in Musicology</h3>
+                        <p>Maynooth University, Maynooth, Co. Kildare, Ireland (2.1 Hons)</p>
+                        <span class="roadmap-date">2015 - 2017</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">🎓</div>
+                    <div class="roadmap-content">
+                        <h3>Bachelor of Music</h3>
+                        <p>Maynooth University, Maynooth, Co. Kildare, Ireland (1.1 Hons)</p>
+                        <span class="roadmap-date">2011 - 2015</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="bg-light p-4 rounded shadow-sm" data-aos="fade-up">
+            <h2>Hobbies🤸🏻‍♀️</h2>
+            <div class="badge-container">
+                <div class="badge">Reading</div>
+                <div class="badge">Playing Piano</div>
+                <div class="badge">Travelling</div>
+                <div class="badge">Weightlifting</div>
+                <div class="badge">Gymnastics</div>
+                <div class="badge">Yoga and breathwork</div>
+                <div class="badge">Running</div>
+            </div>
+        </section>
+
+        <section id="articles" class="bg-light p-4 rounded shadow-sm mb-5" data-aos="fade-up">
+            <h2>Featured Articles</h2>
+            <div class="article-preview">
+                <h3><a href="https://www.siliconrepublic.com/people/career-change-music-tech-courses" target="_blank" rel="noopener noreferrer">Making a big career change from Music to Tech</a></h3>
+                <p>An interview with Silicon Republic journalist exploring how I transitioned from a career in music to a career in tech.</p>
+            </div>
+            <div class="article-preview">
+                <h3><a href="https://www.independent.ie/business/jobs/accelerate-your-it-career/36131719.html" target="_blank" rel="noopener noreferrer">Accelerate Your IT Career</a></h3>
+                <p>This article summarises the graduate programme at Irish Tech consultancy firm Version1.</p>
+            </div>
+        </section>        
+
+        <section id="contact" class="bg-light p-4 rounded shadow-sm" data-aos="fade-up">
+            <h2 class="section-title">Get in touch</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="icon-container">
+                        <a href="https://maps.app.goo.gl/nptBHqCbBsBtfGSG8" style="display: flex; align-items: center;">
+                            <img src="images/location.jpg" alt="current location for sue o'beirne">
+                            <span>Bondi, NSW, 2026</span>
+                        </a>
+                    </span>
+                    <span class="icon-container">
+                        <a href="mailto:susandenise.obeirne@gmail.com" style="display: flex; align-items: center;">
+                            <img src="images/gmail.jpg" alt="email for sue o'beirne">
+                            <span>susandenise.obeirne@gmail.com</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <span class="icon-container">
+                        <a href="#" style="display: flex; align-items: center;">
+                            <img src="images/phone.jpg" alt="phone number for sue o'beirne">
+                            <span>+61 423-068-854</span>
+                        </a>
+                    </span>
+                    <span class="icon-container">
+                        <a href="https://www.linkedin.com/in/sue-o-beirne-b49b5993/" style="display: flex; align-items: center;">
+                            <img src="images/linkedin.jpg" alt="link to sue o'beirne linkedin profile" class="linkedin-icon" >
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        
     </main>
 </div>
     <footer class="text-center py-4 bg-dark text-white">
@@ -131,5 +383,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
